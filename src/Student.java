@@ -14,12 +14,16 @@ public class Student implements Comparable {
 	 * student id
 	 */
 	private int id;
+System.out.println("enter student id");
+Scanner sc=Integer.parseInt(id);
 
 	/**
 	 * student name and surname separated by the whitespace for example:
 	 * fullName = "David Luis";
 	 */
 	private String fullName;
+System.out.println("enter fullname of student");
+Scanner sc=Integer.parseInt(fullName);
 
 	/**
 	 * student date of birth in "yyyy-MM-dd" format

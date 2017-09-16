@@ -12,7 +12,15 @@ public interface StudentArrayOperation {
 	 * @return the array of students
 	 * 
 	 */
+         String names[]={"manasa","haritha","likhithaa","suppraja"};
+
 	Student[] getStudents();
+for(index=0;index<names.length;i++)
+{
+System.out.println(name[i]);
+}
+if(students==null)
+System.out.println("throw IlligalArgumentException");
 	
 
 	/**
@@ -32,6 +40,8 @@ public interface StudentArrayOperation {
 	 *
 	 * @param index
 	 */
+if(index<0 && index>= students.length)
+System.out.println("throw IllegalArgumentException");
 	Student getStudent(int index);
 
 	
@@ -49,6 +59,11 @@ public interface StudentArrayOperation {
 	 * 
 	 * @throws IllegalArgumentException
 	 */
+if(students==null)
+System.out.println("throw IlligalArgumentException");
+else if(index<0 && index>= students.length)
+System.out.println("throw IllegalArgumentException");
+	
 	void setStudent(Student student, int index);
 
 	
@@ -66,6 +81,10 @@ public interface StudentArrayOperation {
 	 * 
 	 * @throws IllegalArgumentException
 	 */
+if(students==null)
+System.out.println("throw IlligalArgumentException");
+ else if(index<0 && index>= students.length)
+System.out.println("throw IllegalArgumentException");
 	void add(Student student, int index);
 
 	
@@ -78,6 +97,8 @@ public interface StudentArrayOperation {
 	 * 
 	 * @throws IllegalArgumentException
 	 */
+if(students==null)
+System.out.println("throw IlligalArgumentException");
 	void addFirst(Student student);
 	
 
@@ -90,6 +111,8 @@ public interface StudentArrayOperation {
 	 * 
 	 * @throws IllegalArgumentException
 	 */
+if(students==null)
+System.out.println("throw IlligalArgumentException");
 	void addLast(Student student);
 	
 
